@@ -1,0 +1,45 @@
+us_boundary_map = states.boundary.plot(figsize=(18, 12), color='Black', linewidth=.5)
+
+west.plot(ax=us_boundary_map,  color="MistyRose")
+
+southwest.plot(ax=us_boundary_map, color="PaleGoldenRod")
+
+southeast.plot(ax=us_boundary_map, color="Plum")
+
+midwest.plot(ax=us_boundary_map, color="PaleTurquoise")
+
+final_map = northeast.plot(ax=us_boundary_map, color="LightPink")
+
+
+fig = us_map.get_figure()
+fig.tight_layout()
+fig.savefig('usa.png', dpi=96)
+
+
+
+us_map = ....plot()
+data.plot(ax=us_map, color="MistyRose")
+us_map_fig = us_map.get_figure()
+us_map_fig.tight_layout()
+us_map_fig.savefig('usa.png', dpi=96)
+
+
+
+df_org.drop(index=['Bob', 'Dave', 'Frank'], inplace=True)
+
+
+>is_2002 =  gapminder['year']==2002
+>print(is_2002.head())
+# filter rows for year 2002 using  the boolean variable
+>gapminder_2002 = gapminder[is_2002]
+>print(gapminder_2002.shape)
+
+or
+# filter rows for year 2002 using  the boolean expression
+>gapminder_2002 = gapminder[gapminder.year.eq(2002)]
+>print(gapminder_2002.shape)
+
+# filter rows for year does not equal to 2002
+>gapminder_not_2002 = gapminder[gapminder.year != 2002]
+>gapminder_not_2002 = gapminder[gapminder['year']!=2002]
+>gapminder_not_2002.shape
