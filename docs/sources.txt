@@ -1,0 +1,4 @@
+Glue data: custom built from searching, there are some libraries that do the same thing.
+election results: harvard, CC0
+covid data:
+shapefiles: state US weather service, county 

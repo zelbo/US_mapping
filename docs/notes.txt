@@ -1,0 +1,142 @@
+Covid by voter affiliation
+Specifications
+Color coded by political party.
+Intensity by value (population, # of voters, drivers, bear attacks, whatever)
+Alaska/Hawaii inset
+Identifier key merge tool
+    Fips, zip, STUSPS, zctz, county, state, region
+
+Possible solutions
+make a map by vote, set colors
+make that the background to another map that is set to alpha transparency by value
+
+or
+
+make background greyscale by value
+overlay transparent (%50 alpha?) by politics
+
+Alaska/hawaii just create two new data frames. Then in map layout, you should be able to independently resize/move them.
+
+how to convert between fips/zip/name?
+Join these to csv to get something that can then be joined to shapefile.
+fips/zip/county merge.csv
+alaska/hawaii/other resize insert for display shape
+display background in geopandas - political coloring?
+
+Links of interest
+Fips linking
+https://github.com/kjhealy/fips-codes
+https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/OSLU4G
+https://www.census.gov/geographies/reference-files/2017/demo/popest/2017-fips.html
+https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697
+https://catalog.data.gov/dataset/zip-codetabilation-area-boundaries
+https://simplemaps.com/data/us-zips (CCA 4.0)
+https://www.udsmapper.org/zcta-crosswalk.cfm
+https://www.census.gov/programs-surveys/geography/guidance/geo-areas/zctas.html
+
+https://geopandas.org/mapping.html
+https://towardsdatascience.com/visualizing-the-coronavirus-pandemic-with-choropleth-maps-7f30fccaecf5
+
+https://en.m.wikipedia.org/wiki/List_of_United_States_FIPS_codes_by_county
+
+https://www.nrcs.usda.gov/wps/portal/nrcs/detail/national/home/?cid=nrcs143_013697
+
+Some geopandas info:
+https://jcutrer.com/python/learn-geopandas-plotting-usmaps
+https://towardsdatascience.com/mapping-with-matplotlib-pandas-geopandas-and-basemap-in-python-d11b57ab5dac
+
+
+Code snippets
+
+Display some sample data to double check that your file loaded properly and looks right:
+print(df.head())
+Show headings of file to find key to join on:
+print(df.columns)
+
+df.head() and df.columns should both print out in a python shell, but print() should be used to make sure it outputs for all environments.
+
+#seperate alaska/hawaii
+AK = map_df[map_df['STUSPS'] == 'AK']
+HI = map_df[map_df['STUSPS'] == 'HI']
+US_MAIN = map_df[map_df['STUSPS'] != 'AK']
+US_MAIN = map_df[map_df['STUSPS'] != 'HI']
+
+#resize
+for t in range(len(shape)):
+            l = list(shape[t])
+            l[1] -= 4000000
+            l[0] += 1000000
+            tup = tuple(l)
+            shape[t] = tup
+
+Miscellaneous
+
+Here are some cmap codes you can play around with.
+More info on colormaps can be found here https://matplotlib.org/tutorials/colors/colormaps.html
+viridis, plasma, inferno, magma, cividis
+Greys, Purples, Blues, Greens, Oranges, Reds
+YlOrBr, OrRd, PuRd, RdPu, BuPu, GnBu, PuBu, YlGnBu, PuBuGn, BuGn, YlGn
+PiYg, PRGn, BrBG, PuOr, RdGy, RdBu, RdYlBu, Spectral, coolwarm, bwr, seismic
+twilight, twilight_shifted, hsv
+Pastel1, Pastel2, PAired, Accent, Dark2, Set1, Set2, Set3, tab10, tab20, tab20b, tab20c
+
+
+
+
+
+search terms: python resize alaska shapefile
+returns results for R
+# holy fuck i found it maybe!
+https://www.storybench.org/how-to-shift-alaska-and-hawaii-below-the-lower-48-for-your-interactive-choropleth-map/
+# it's for the R language. bleh.
+https://rud.is/b/2014/11/16/moving-the-earth-well-alaska-hawaii-with-r/
+https://stackoverflow.com/questions/13757771/relocating-alaska-and-hawaii-on-thematic-map-of-the-usa-with-ggplot2/13767984#13767984
+# python!
+https://chrishavlin.com/2016/11/16/shapefiles-tutorial/
+https://pypi.org/project/pyshp/
+
+
+https://lehd.ces.census.gov/data/schema/latest/lehd_shapefiles.html
+https://postalpro.usps.com/address-quality/ais-viewer
+
+
+
+Points
+
+class Point(coordinates)
+
+    The Point constructor takes positional coordinate values or point tuple parameters.
+
+>>> from shapely.geometry import Point
+>>> point = Point(0.0, 0.0)
+>>> q = Point((0.0, 0.0))
+
+A Point has zero area and zero length.
+
+>>> point.area
+0.0
+>>> point.length
+0.0
+
+Its x-y bounding box is a (minx, miny, maxx, maxy) tuple.
+
+>>> point.bounds
+(0.0, 0.0, 0.0, 0.0)
+
+Coordinate values are accessed via coords, x, y, and z properties.
+
+
+GeoSeries.scale(self, xfact=1.0, yfact=1.0, zfact=1.0, origin='center')
+
+    Scale the geometries of the GeoSeries along each (x, y, z) dimensio.
+
+
+GeoSeries.translate(self, xoff=0.0, yoff=0.0, zoff=0.0)
+
+    Shift the coordinates of the GeoSeries.
+
+
+DataFrame.to_csv(path/filename)
+
+
+

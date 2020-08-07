@@ -1,0 +1,24 @@
+﻿County merge data: STATE_FP, COUNTY_FP, COUNTY, FIPS, COUNTY_NAME, STUSPS
+County election results: STATE_NAME, STUSPS, COUNTY_NAME, FIPS, PARTY
+
+State merge data: STATE_FP, STUSPS, STATE_NAME, STATENS
+State election results: STATE_FP, STUSPS, STATE_NAME, STATENS, PARTY
+
+def glue(include_counties, glue_df, election_results_df):
+    if include_counties:
+        # county merge:
+        merged_df = pd.merge(glue_df, election_results_df, how='left',
+                                 left_on=['COUNTY_NAME', 'STUSPS', 'FIPS'],
+                                 right_on=['COUNTY_NAME', 'STUSPS', 'FIPS'])
+    else:
+        # state merge:
+        merged_df = pd.merge(glue_df, election_results_df, how='left',
+                                left_on=['STATE_FP', 'STUSPS', 'STATE_NAME', 'STATENS'],
+                                right_on=['STATE_FP', 'STUSPS', 'STATE_NAME', 'STATENS'])
+
+    # bool include_counties, false for just states
+    merged_df = data_df  # just to clear errors for now.
+
+
+    return merged_df
+
