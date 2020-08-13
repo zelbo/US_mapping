@@ -1,0 +1,268 @@
+Summary for: cb_2019_us_state_5m.shp
+file size: (1.3297805786132812, 'megabytes')
+
+keys: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP  ...                                           geometry
+0      23  ...  MULTIPOLYGON (((-68.37659 44.11376, -68.37538 ...
+1      33  ...  POLYGON ((-72.55725 42.85302, -72.55423 42.860...
+2      10  ...  MULTIPOLYGON (((-75.57080 39.62677, -75.55945 ...
+
+[3 rows x 10 columns]
+
+length: 
+56
+
+Summary for: cb_2019_us_state_20m.shp
+file size: (218.78515625, 'kilobytes')
+
+keys: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP  ...                                           geometry
+0      53  ...  MULTIPOLYGON (((-123.23715 48.68347, -123.0704...
+1      72  ...  MULTIPOLYGON (((-65.34207 18.34529, -65.25593 ...
+2      46  ...  POLYGON ((-104.05770 44.99743, -104.03914 44.9...
+
+[3 rows x 10 columns]
+
+length: 
+52
+
+Summary for: s_11au16.shp
+file size: (32.7550048828125, 'megabytes')
+
+keys: 
+Index(['STATE', 'NAME', 'FIPS', 'LON', 'LAT', 'geometry'], dtype='object')
+
+columns: 
+Index(['STATE', 'NAME', 'FIPS', 'LON', 'LAT', 'geometry'], dtype='object')
+
+head: 
+  STATE      NAME  ...       LAT                                           geometry
+0    AK    Alaska  ...  64.24019  MULTIPOLYGON (((-179.10754 51.30120, -179.1054...
+1    AL   Alabama  ...  32.79354  MULTIPOLYGON (((-88.11011 30.25891, -88.10638 ...
+2    AR  Arkansas  ...  34.89977  POLYGON ((-91.62986 36.49921, -91.62849 36.499...
+
+[3 rows x 6 columns]
+
+length: 
+57
+
+Summary for: cb_2019_us_state_500k.shp
+file size: (4.4993133544921875, 'megabytes')
+
+keys: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP  ...                                           geometry
+0      12  ...  MULTIPOLYGON (((-80.17628 25.52505, -80.17395 ...
+1      78  ...  MULTIPOLYGON (((-64.62799 17.78933, -64.62717 ...
+2      30  ...  POLYGON ((-116.04914 48.50205, -116.04913 48.5...
+
+[3 rows x 10 columns]
+
+length: 
+56
+
+Summary for: cb_2019_us_county_5m.shp
+file size: (3.493072509765625, 'megabytes')
+
+keys: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP COUNTYFP  ...    AWATER                                           geometry
+0      24      510  ...  28758714  POLYGON ((-76.71131 39.37193, -76.62619 39.372...
+1      31      169  ...   3025339  POLYGON ((-97.82082 40.35054, -97.36869 40.350...
+2      37      077  ...  14503653  POLYGON ((-78.80252 36.21349, -78.80235 36.220...
+
+[3 rows x 10 columns]
+
+length: 
+3233
+
+Summary for: tl_2019_us_county.shp
+file size: (121.45445251464844, 'megabytes')
+
+keys: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'GEOID', 'NAME', 'NAMELSAD', 'LSAD',
+       'CLASSFP', 'MTFCC', 'CSAFP', 'CBSAFP', 'METDIVFP', 'FUNCSTAT', 'ALAND',
+       'AWATER', 'INTPTLAT', 'INTPTLON', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'GEOID', 'NAME', 'NAMELSAD', 'LSAD',
+       'CLASSFP', 'MTFCC', 'CSAFP', 'CBSAFP', 'METDIVFP', 'FUNCSTAT', 'ALAND',
+       'AWATER', 'INTPTLAT', 'INTPTLON', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP  ...                                           geometry
+0      31  ...  POLYGON ((-97.01952 42.00410, -97.01952 42.004...
+1      53  ...  POLYGON ((-123.43639 46.23820, -123.44759 46.2...
+2      35  ...  POLYGON ((-104.56739 33.99757, -104.56772 33.9...
+
+[3 rows x 18 columns]
+
+length: 
+3233
+
+Summary for: usa-2016-presidential-election-by-county.shp
+file size: (8.72268295288086, 'megabytes')
+
+keys: 
+Index(['state', 'st', 'fips', 'county', 'precincts', 'votes', 'dem08', 'dem12',
+       'rep08', 'rep12',
+       ...
+       'total12', 'other08', 'other12', 'other12_fra', 'other08_fra',
+       'rep12_frac2', 'rep08_frac2', 'dem12_frac2', 'dem08_frac2', 'geometry'],
+      dtype='object', length=156)
+
+columns: 
+Index(['state', 'st', 'fips', 'county', 'precincts', 'votes', 'dem08', 'dem12',
+       'rep08', 'rep12',
+       ...
+       'total12', 'other08', 'other12', 'other12_fra', 'other08_fra',
+       'rep12_frac2', 'rep08_frac2', 'dem12_frac2', 'dem08_frac2', 'geometry'],
+      dtype='object', length=156)
+
+head: 
+       state  ...                                           geometry
+0  Minnesota  ...  POLYGON ((-93.05477 46.59324, -93.06268 46.593...
+1     Kansas  ...  POLYGON ((-96.92737 38.69601, -96.92746 38.712...
+2   Oklahoma  ...  POLYGON ((-96.44129 35.46771, -96.44332 35.461...
+
+[3 rows x 156 columns]
+
+length: 
+3143
+
+Summary for: c_03mr20.shp
+file size: (31.59575653076172, 'megabytes')
+
+keys: 
+Index(['STATE', 'CWA', 'COUNTYNAME', 'FIPS', 'TIME_ZONE', 'FE_AREA', 'LON',
+       'LAT', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATE', 'CWA', 'COUNTYNAME', 'FIPS', 'TIME_ZONE', 'FE_AREA', 'LON',
+       'LAT', 'geometry'],
+      dtype='object')
+
+head: 
+  STATE  CWA  ...      LAT                                           geometry
+0    ME  CAR  ...  45.0363  MULTIPOLYGON (((-67.93539 44.40382, -67.93643 ...
+1    GA  CHS  ...  31.5329  MULTIPOLYGON (((-81.46814 31.33980, -81.46747 ...
+2    GA  CHS  ...  31.7093  POLYGON ((-81.30807 31.79454, -81.30546 31.791...
+
+[3 rows x 9 columns]
+
+length: 
+3331
+
+Summary for: tl_2019_us_state.shp
+file size: (14.1751708984375, 'megabytes')
+
+keys: 
+Index(['REGION', 'DIVISION', 'STATEFP', 'STATENS', 'GEOID', 'STUSPS', 'NAME',
+       'LSAD', 'MTFCC', 'FUNCSTAT', 'ALAND', 'AWATER', 'INTPTLAT', 'INTPTLON',
+       'geometry'],
+      dtype='object')
+
+columns: 
+Index(['REGION', 'DIVISION', 'STATEFP', 'STATENS', 'GEOID', 'STUSPS', 'NAME',
+       'LSAD', 'MTFCC', 'FUNCSTAT', 'ALAND', 'AWATER', 'INTPTLAT', 'INTPTLON',
+       'geometry'],
+      dtype='object')
+
+head: 
+  REGION  ...                                           geometry
+0      3  ...  POLYGON ((-81.74725 39.09538, -81.74635 39.096...
+1      3  ...  MULTIPOLYGON (((-86.38865 30.99418, -86.38385 ...
+2      2  ...  POLYGON ((-91.18529 40.63780, -91.17510 40.643...
+
+[3 rows x 15 columns]
+
+length: 
+56
+
+Summary for: UScounties.shp
+file size: (1.4475059509277344, 'megabytes')
+
+keys: 
+Index(['NAME', 'STATE_NAME', 'STATE_FIPS', 'CNTY_FIPS', 'FIPS', 'geometry'], dtype='object')
+
+columns: 
+Index(['NAME', 'STATE_NAME', 'STATE_FIPS', 'CNTY_FIPS', 'FIPS', 'geometry'], dtype='object')
+
+head: 
+                NAME  ...                                           geometry
+0  Lake of the Woods  ...  POLYGON ((-95.34283 48.54668, -95.34105 48.715...
+1              Ferry  ...  POLYGON ((-118.85163 47.94956, -118.84846 48.4...
+2            Stevens  ...  POLYGON ((-117.43883 48.04412, -117.54219 48.0...
+
+[3 rows x 6 columns]
+
+length: 
+3141
+
+Summary for: tl_2016_us_county.shp
+file size: (118.23870086669922, 'megabytes')
+
+keys: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'GEOID', 'NAME', 'NAMELSAD', 'LSAD',
+       'CLASSFP', 'MTFCC', 'CSAFP', 'CBSAFP', 'METDIVFP', 'FUNCSTAT', 'ALAND',
+       'AWATER', 'INTPTLAT', 'INTPTLON', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'GEOID', 'NAME', 'NAMELSAD', 'LSAD',
+       'CLASSFP', 'MTFCC', 'CSAFP', 'CBSAFP', 'METDIVFP', 'FUNCSTAT', 'ALAND',
+       'AWATER', 'INTPTLAT', 'INTPTLON', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP  ...                                           geometry
+0      31  ...  POLYGON ((-97.01952 42.00410, -97.01952 42.004...
+1      53  ...  POLYGON ((-123.43639 46.23820, -123.44759 46.2...
+2      35  ...  POLYGON ((-104.56739 33.99757, -104.56772 33.9...
+
+[3 rows x 18 columns]
+
+length: 
+3233
+

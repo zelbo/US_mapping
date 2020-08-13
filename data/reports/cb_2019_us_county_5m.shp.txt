@@ -1,0 +1,40 @@
+file name: cb_2019_us_county_5m.shp
+file size: 3662752 bytes
+
+keys: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+columns: 
+Index(['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'LSAD',
+       'ALAND', 'AWATER', 'geometry'],
+      dtype='object')
+
+head: 
+  STATEFP COUNTYFP  ...    AWATER                                           geometry
+0      24      510  ...  28758714  POLYGON ((-76.71131 39.37193, -76.62619 39.372...
+1      31      169  ...   3025339  POLYGON ((-97.82082 40.35054, -97.36869 40.350...
+2      37      077  ...  14503653  POLYGON ((-78.80252 36.21349, -78.80235 36.220...
+
+[3 rows x 10 columns]
+
+length: 
+3233
+
+shape: 
+(3233, 10)
+
+memory usage in bytes: 
+Index         128
+STATEFP     25864
+COUNTYFP    25864
+COUNTYNS    25864
+AFFGEOID    25864
+GEOID       25864
+NAME        25864
+LSAD        25864
+ALAND       25864
+AWATER      25864
+geometry    25864
+dtype: int64

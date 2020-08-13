@@ -1,0 +1,52 @@
+STATE_FP,STUSPS,STATE_NAME,STATENS,PARTY
+01,AL,Alabama,01779775,republican
+02,AK,Alaska,01785533,republican
+04,AZ,Arizona,01779777,republican
+05,AR,Arkansas,00068085,republican
+06,CA,California,01779778,democrat
+08,CO,Colorado,01779779,democrat
+09,CT,Connecticut,01779780,democrat
+10,DE,Delaware,01779781,democrat
+11,DC,District of Columbia,01702382,democrat
+12,FL,Florida,00294478,republican
+13,GA,Georgia,01705317,republican
+15,HI,Hawaii,01779782,democrat
+16,ID,Idaho,01779783,republican
+17,IL,Illinois,01779784,democrat
+18,IN,Indiana,00448508,republican
+19,IA,Iowa,01779785,republican
+20,KS,Kansas,00481813,republican
+21,KY,Kentucky,01779786,republican
+22,LA,Louisiana,01629543,republican
+23,ME,Maine,01779787,democrat
+24,MD,Maryland,01714934,democrat
+25,MA,Massachusetts,00606926,democrat
+26,MI,Michigan,01779789,republican
+27,MN,Minnesota,00662849,democrat
+28,MS,Mississippi,01779790,republican
+29,MO,Missouri,01779791,republican
+30,MT,Montana,00767982,republican
+31,NE,Nebraska,01779792,republican
+32,NV,Nevada,01779793,democrat
+33,NH,New Hampshire,01779794,democrat
+34,NJ,New Jersey,01779795,democrat
+35,NM,New Mexico,00897535,democrat
+36,NY,New York,01779796,democrat
+37,NC,North Carolina,01027616,republican
+38,ND,North Dakota,01779797,republican
+39,OH,Ohio,01085497,republican
+40,OK,Oklahoma,01102857,republican
+41,OR,Oregon,01155107,democrat
+42,PA,Pennsylvania,01779798,republican
+44,RI,Rhode Island,01219835,democrat
+45,SC,South Carolina,01779799,republican
+46,SD,South Dakota,01785534,republican
+47,TN,Tennessee,01325873,republican
+48,TX,Texas,01779801,republican
+49,UT,Utah,01455989,republican
+50,VT,Vermont,01779802,democrat
+51,VA,Virginia,01779803,democrat
+53,WA,Washington,01779804,democrat
+54,WV,West Virginia,01779805,republican
+55,WI,Wisconsin,01779806,republican
+56,WY,Wyoming,01779807,republican
