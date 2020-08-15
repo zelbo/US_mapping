@@ -1,0 +1,34 @@
+[33me137826[m[33m ([m[1;36mHEAD -> [m[1;32mmerge[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: checkout: moving from master to merge
+[33m6794c3f[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{1}: reset: moving to 6794c3fe6d7436fd8b8909c491637fed40e258b6
+[33m88fa202[m HEAD@{2}: commit: squash! Major reorganizing and refactoring
+[33m74242f7[m HEAD@{3}: reset: moving to 74242f73f10891091cf4fe59ae4bb27fe93efc00
+[33mfd1e21f[m HEAD@{4}: commit: Revert "Add files via upload"
+[33m4a5cbfb[m HEAD@{5}: rebase -i (finish): returning to refs/heads/master
+[33m4a5cbfb[m HEAD@{6}: rebase -i (pick): Add files via upload
+[33m74242f7[m HEAD@{7}: rebase -i (start): checkout 74242f73f10891091cf4fe59ae4bb27fe93efc00
+[33mfeee0d4[m HEAD@{8}: rebase -i (finish): returning to refs/heads/master
+[33mfeee0d4[m HEAD@{9}: rebase -i (pick): Add files via upload
+[33mec16384[m HEAD@{10}: rebase -i (start): checkout ec16384e26c1f19c506481e601a22aba78f20812
+[33m745460d[m HEAD@{11}: rebase -i (finish): returning to refs/heads/master
+[33m745460d[m HEAD@{12}: rebase -i (pick): Add files via upload
+[33m8eb2bd9[m HEAD@{13}: rebase -i (start): checkout 8eb2bd9d268c60ad3c02cdff2855f6f9214f9847
+[33md8d0ba1[m HEAD@{14}: rebase -i (finish): returning to refs/heads/master
+[33md8d0ba1[m HEAD@{15}: rebase -i (pick): Add files via upload
+[33mb9ec5e2[m HEAD@{16}: rebase -i (pick): Add files via upload
+[33m8eb2bd9[m HEAD@{17}: rebase -i (pick): Add files via upload
+[33mec16384[m HEAD@{18}: rebase -i (start): checkout ec16384e26c1f19c506481e601a22aba78f20812
+[33mc334450[m HEAD@{19}: reset: moving to HEAD
+[33mc334450[m HEAD@{20}: reset: moving to c3344504a80bfff27de6821e47efb2d841dc38f4
+[33mc334450[m HEAD@{21}: cherry-pick: Add files via upload
+[33m77bce2f[m HEAD@{22}: cherry-pick: Add files via upload
+[33m78dca14[m HEAD@{23}: cherry-pick: Add files via upload
+[33mf687708[m HEAD@{24}: cherry-pick: Add files via upload
+[33mec16384[m HEAD@{25}: rebase: checkout master
+[33mec16384[m HEAD@{26}: checkout: moving from master to merge
+[33mec16384[m HEAD@{27}: commit (amend): Moved most file IO to paths.py, cleaned up merge functions. found smaller shapefiles.
+[33mca49b15[m HEAD@{28}: commit: Moved most file IO to paths.py, cleaned up merge functions. found smaller shapefiles.
+[33m74242f7[m HEAD@{29}: commit: Moved most file IO to paths.py, cleaned up merge functions. added shapes to gitignore until I can find smaller shapefiles
+[33m6794c3f[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{30}: commit: Moved most file IO to paths.py, cleaned up merge functions.
+[33me8e0d96[m HEAD@{31}: commit: Major reorganizing and refactoring
+[33me137826[m[33m ([m[1;36mHEAD -> [m[1;32mmerge[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{32}: commit: Major reorganizing and refactoring
+[33maac3224[m HEAD@{33}: clone: from https://github.com/zelbo/US_mapping

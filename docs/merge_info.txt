@@ -1,24 +1,26 @@
-﻿County merge data: STATE_FP, COUNTY_FP, COUNTY, FIPS, COUNTY_NAME, STUSPS
+﻿cb_2019_us_county_5m.shp
+keys:
+['STATEFP', 'COUNTYFP', 'COUNTYNS', 'AFFGEOID', 'GEOID', 'NAME', 'LSAD', 'ALAND', 'AWATER', 'geometry']
+
+cb_2019_us_state_5m.shp
+keys:
+['STATEFP', 'STATENS', 'AFFGEOID', 'GEOID', 'STUSPS', 'NAME', 'LSAD', 'ALAND', 'AWATER', 'geometry']
+
+County merge data: STATE_FP, COUNTY_FP, COUNTY, FIPS, COUNTY_NAME, STUSPS
 County election results: STATE_NAME, STUSPS, COUNTY_NAME, FIPS, PARTY
+Covid 19 Cases by County: fips (odd format: 1001.0), state (name), county (name)
 
 State merge data: STATE_FP, STUSPS, STATE_NAME, STATENS
 State election results: STATE_FP, STUSPS, STATE_NAME, STATENS, PARTY
+COVID 19 Cases by State: State (name)
 
-def glue(include_counties, glue_df, election_results_df):
-    if include_counties:
-        # county merge:
-        merged_df = pd.merge(glue_df, election_results_df, how='left',
-                                 left_on=['COUNTY_NAME', 'STUSPS', 'FIPS'],
-                                 right_on=['COUNTY_NAME', 'STUSPS', 'FIPS'])
-    else:
-        # state merge:
-        merged_df = pd.merge(glue_df, election_results_df, how='left',
-                                left_on=['STATE_FP', 'STUSPS', 'STATE_NAME', 'STATENS'],
-                                right_on=['STATE_FP', 'STUSPS', 'STATE_NAME', 'STATENS'])
+Naming conventions could use some work.
+Create constants for the headings?
+Should FIPS be treated as an int or a string?
+Will the mismatch between 1001.0 and 01001 be an issue? Convert? Ignore?
+Do we even need the glue data for this project?
 
-    # bool include_counties, false for just states
-    merged_df = data_df  # just to clear errors for now.
-
-
-    return merged_df
-
+Merge Steps:
+    glue_data + election_results = political.csv
+    + covid_data = covid_political.csv
+    + geo_shape = debug.csv (good luck opening this in a spreadsheet program)
